@@ -1,4 +1,5 @@
-import os, configparser
+import os
+import configparser
 from gitblib.command.gitrepo import GitRepository
 from gitblib.utility.helper import repo_dir
 from gitblib.utility.helper import repo_file

@@ -2,12 +2,14 @@ import os
 import configparser
 from gitblib.utility.helper import repo_file
 
+
 class GitRepository(object):
     """A git repository"""
 
     worktree = None
     gitdir = None
     conf = None
+
 
     def __init__(self, path, force=False):
         self.worktree = path
