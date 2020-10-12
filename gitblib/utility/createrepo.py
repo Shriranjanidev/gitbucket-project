@@ -1,13 +1,15 @@
 import os, configparser
 from gitblib.command.gitrepo import GitRepository
-from gitblib.utility.helper import repo_dir, repo_file
+from gitblib.utility.helper import repo_dir
+from gitblib.utility.helper import repo_file
+
 
 def repo_create(path):
     repo = GitRepository(path, True)
 
     if os.path.exists(repo.worktree):
         if not os.path.isdir(repo.worktree):
-            raise Exception ("%s is not a directory!" % path)
+            raise Exception("%s is not a directory!" % path)
         if os.listdir(repo.worktree):
             raise Exception("%s is not empty!" % path)
     else:
@@ -31,6 +33,7 @@ def repo_create(path):
         config.write(f)
 
     return repo
+
 
 def repo_default_config():
     ret = configparser.ConfigParser()
