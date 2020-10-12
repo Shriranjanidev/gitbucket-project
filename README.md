@@ -2,7 +2,9 @@
 A python implementation of git
 
 ## Pre-requisite
-Python 3 installation
+- Install python 3+ using https://docs.python.org/3/using/index.html
+- Install pip https://pip.pypa.io/en/stable/installing/
+- pip install gitblib
 
 ## Usage
 gitb [command] [option]
