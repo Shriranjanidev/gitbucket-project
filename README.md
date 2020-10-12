@@ -8,3 +8,6 @@ A python implementation of git
 
 ## Usage
 gitb [command] [option]
+
+### init
+  - Creates a .git directory with .object, .refs, .heads, .tags and .branches (Similar to that of git init)
