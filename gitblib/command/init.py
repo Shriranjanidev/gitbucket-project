@@ -6,4 +6,3 @@ class Init(Command):
     def execute(self, args):
         print('TODO init')
         repo_create(args.path)
- 
