@@ -1,9 +1,0 @@
-from .command import Command 
-from .utility.createrepo import repo_create
-
-class Init(Command):
-    def execute(self, args):
-        print('TODO init')
-        repo_create(args.path)
-
-    
