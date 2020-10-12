@@ -4,7 +4,6 @@ from gitblib.utility.helper import repo_file
 
 
 class GitRepository(object):
-    """A git repository"""
 
     worktree = None
     gitdir = None
@@ -17,7 +16,6 @@ class GitRepository(object):
         if not (force or os.path.isdir(self.gitdir)):
             raise Exception("Not a Git repository %s" % path)
 
-        # Read configuration file in .git/config
         self.conf = configparser.ConfigParser()
         cf = repo_file(self, "config")
 

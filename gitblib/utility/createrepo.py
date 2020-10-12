@@ -21,11 +21,9 @@ def repo_create(path):
     assert(repo_dir(repo, "refs", "tags", mkdir=True))
     assert(repo_dir(repo, "refs", "heads", mkdir=True))
 
-    # .git/description
     with open(repo_file(repo, "description"), "w") as f:
         f.write("Unnamed repository; edit this file 'description' to name the repository.\n")
 
-    # .git/HEAD
     with open(repo_file(repo, "HEAD"), "w") as f:
         f.write("ref: refs/heads/master\n")
 
